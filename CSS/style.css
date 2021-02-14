@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: rgb(251, 255, 0);
+    width: 100vw;
+    height: 10vh;
+}
+.logo{
+    width: 150px;
+    height: 100px;;
+}
+
+.gPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAFBFD;
+}
+
+.wPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+li{
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+
+ul{
+    margin-left: 20vw;
+}
+
