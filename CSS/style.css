@@ -93,3 +93,53 @@ a{
     z-index: 2;
 }
 
+.text{
+    font-size: 4vw;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 3vw;
+    margin-top: 20vh;
+    position: absolute;
+}
+
+.blue_text{
+    color: #4285F4;
+}
+
+.text1{
+    font-size: 1vw;
+    font-family: 'Rubik', sans-serif;
+    color: #616161;
+    font-weight: normal;
+    margin-left: 3vw;
+}
+
+.text::after{
+    content: text1;
+}
+
+.play_btn{
+    width: 4vw;
+    bottom: 5vh;
+    left: 3vw;
+    position: absolute;
+}
+
+.top{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    position: absolute;
+    bottom: 8.5vh;
+    left: 8vw;
+    font-size: 1.5vw;
+    color: #616161;
+}
+
+.bottom_txt{
+    font-size: 1vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+}
+
+.top::after{
+    content: bottom_txt;
+}
