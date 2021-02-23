@@ -7,7 +7,7 @@
 body{
     background-color: #FAFBFD;
 }
-
+/*PIERWSZA STRONA*/
 .header{
     
     width: 100vw;
@@ -58,19 +58,26 @@ ul{
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:hover,a:visited,a:focus{
+    color: black;
 }
 
 .button{
     background-color: #4285F4;
-    width: 6vw;
+    width: 8vw;
     height: 5vh;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
     border: 0;
     font-family: 'Raleway', sans-serif;
     color: #FCFDFE;
     margin-left: 18vw;
     z-index: 3;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 
@@ -93,28 +100,27 @@ a{
     z-index: 2;
 }
 
+.take_care_text{
+    position: absolute;
+}
+
 .text{
     font-size: 4vw;
     font-family: 'Rubik', sans-serif;
     margin-left: 3vw;
     margin-top: 20vh;
-    position: absolute;
 }
 
 .blue_text{
     color: #4285F4;
 }
 
-.text1{
+.text_1{
     font-size: 1vw;
     font-family: 'Rubik', sans-serif;
     color: #616161;
     font-weight: normal;
     margin-left: 3vw;
-}
-
-.text::after{
-    content: text1;
 }
 
 .play_btn{
@@ -124,12 +130,15 @@ a{
     position: absolute;
 }
 
+.stay_safe_text{
+    position: absolute;
+    bottom: 6.2vh;
+    left: 8vw;
+}
+
 .top{
     font-family: 'Rubik', sans-serif;
     font-weight: normal;
-    position: absolute;
-    bottom: 8.5vh;
-    left: 8vw;
     font-size: 1.5vw;
     color: #616161;
 }
@@ -140,6 +149,180 @@ a{
     font-weight: normal;
 }
 
-.top::after{
-    content: bottom_txt;
+/*DRUGA STRONA*/
+.something_on_the_left_side{
+    width: 25vw;
+    position: relative;
+    top: 10vh;
+    left: 6vw
+}
+
+.text_page2{
+    font-size: 4vw;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 50vw;
+    top: -50vh;
+    position: absolute;
+}
+
+.red_text{
+    color: #EC5863;
+}
+
+.text_page2_1{
+    font-family: 'Rubik', sans-serif;
+    color: #616161;
+    font-weight: normal;
+    margin-left: 50vw;
+    top: -30vh;
+    position: absolute;
+}
+
+.right_side_page2{
+    position: relative;
+}
+
+.button_red{
+    position: absolute;
+    background-color: #EC5863;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #FCFDFE;
+    margin-left: 50vw;
+    z-index: 3;
+    font-weight: bold;
+    letter-spacing: 5px;
+    top: -20vh;
+}
+
+/*TRZECIA STRONA*/
+.top_thirdPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+.frame_thirdPage{
+    background-color: white;
+    width: 50vw;
+    height: 15vh;
+    border-radius: 32px;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.top_thirdPage::before{
+    content: '';
+    height: 10vh;
+    width: 10vh;
+    background-color: #EC5863;
+    position: relative; 
+    display: block;
+    border-radius: 30px;
+    transform: rotate(-30deg);
+    right: -4vw;
+    top: 6vh;
+}
+
+.top_thirdPage::after{
+    content: '';
+    height: 18vh;
+    width: 18vh;
+    background-color: #EC5863;
+    position: relative; 
+    display: block;
+    border-radius: 60px;
+    transform: rotate(-30deg);
+    left: -5vw;
+}
+
+
+
+.middle_rectangle{
+    height: 14vh;
+    width: 14vh;
+    background-color: #EC5863;
+    position: absolute; 
+    border-radius: 45px;
+    transform: rotate(105deg);
+    left: 17vw;
+    top: -5vh;
+    
+}
+
+.font_rubik{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 6px;
+}
+
+.users, .countries, .medical_experts{
+    float: left;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.users, .countries{
+    width: 20%;
+    text-align: center;
+    margin-left: 2.5vw;
+}
+
+.medical_experts{
+    width: 50%;
+    text-align: center;
+}
+
+.bottom_text_thirdPage{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 7px;
+}
+
+.left_text_thirdPage{
+    font-size: 4vw;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 3vw;
+    margin-top: 13vh;
+}
+
+.left_text2_thirdPage{
+    font-size: 1vw;
+    font-family: 'Rubik', sans-serif;
+    color: #616161;
+    font-weight: normal;
+    margin-left: 3vw;
+}
+
+.button_red_thirdPage{
+    position: absolute;
+    background-color: #EC5863;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #FCFDFE;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    z-index: 3;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.video{
+    position: relative;
+    left: 47vw;
+    width: 50vw;
+    bottom: 30vh;
 }
