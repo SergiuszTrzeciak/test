@@ -226,7 +226,7 @@ a:hover,a:visited,a:focus{
     display: block;
     border-radius: 30px;
     transform: rotate(-30deg);
-    right: -4vw;
+    right: -11vw;
     top: 6vh;
 }
 
@@ -248,12 +248,12 @@ a:hover,a:visited,a:focus{
     height: 14vh;
     width: 14vh;
     background-color: #EC5863;
-    position: absolute; 
+    position: relative; 
     border-radius: 45px;
     transform: rotate(105deg);
-    left: 17vw;
+    left: 23vw;
     top: -5vh;
-    
+    z-index: 1;
 }
 
 .font_rubik{
@@ -315,7 +315,6 @@ a:hover,a:visited,a:focus{
     color: #FCFDFE;
     margin-left: 3vw;
     margin-top: 2vw;
-    z-index: 3;
     font-weight: bold;
     letter-spacing: 5px;
 }
@@ -325,4 +324,110 @@ a:hover,a:visited,a:focus{
     left: 47vw;
     width: 50vw;
     bottom: 30vh;
+}
+/*TRZECIA STRONA*/
+.top_fourthPage{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.top_text_pageFourth{
+    font-style: normal;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Rubik', sans-serif;
+}
+
+.bottom_text_pageFourth{
+    width: 50vw;
+    font-family: 'Rubik', sans-serif;
+    color: #616161;
+    font-weight: normal;
+    font-size: 1vw;
+}
+
+.middle_fourthPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.symptom_checker, .medical_support, .conditions{
+    background-color: white;
+    width: 20vw;
+    height: 40vh;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.symptom_checker::before{
+    content: '';
+    height: 10vh;
+    width: 10vh;
+    background-color: #EC5863;
+    position: relative; 
+    display: block;
+    border-radius: 30px;
+    transform: rotate(-30deg);
+    left: -9vw;
+    top: 33vh;
+}
+
+.symptom_checker::after{
+    content: '';
+    height: 16vh;
+    width: 16vh;
+    background-color: #EC5863;
+    position: absolute; 
+    display: block;
+    border-radius: 30px;
+    transform: rotate(105deg);
+    left: 25vw;
+}
+
+.human, .nurse, .heart{
+    width: 5vw;
+}
+
+.title{
+    font-family: Rubik;
+    font-style: normal;
+    color: black;
+    letter-spacing: 3px;
+    margin-top: 2vh;
+}
+
+.under_text{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #616161;
+    letter-spacing: 3px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 2vh;
+}
+
+.bottom_fourthPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google_play, .app_store{
+    width: 10vw;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
