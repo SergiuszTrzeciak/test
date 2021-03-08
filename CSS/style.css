@@ -34,32 +34,49 @@ h1, h2, h3{
 }
 
 /*PIERWSZA STRONA*/
-.header{
+
+.header {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    margin-top: 3rem;
+  }
+  
+.button { 
+    background-color: #4285F4;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    color: #FCFDFE;
+    z-index: 3;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
     
-    width: 100vw;
-    height: 10vh;
+}
+  
+.header > ul{
     display: flex;
-    align-items: center;
-   
+    flex-direction: row; /*dodane zamiast float: left; w li*/
 }
 
 .logo{
-    width: 15vw;
+    width: 10vw;
     height: 100%;
-    float: left;
-    margin-left: 2vw;
-}
-
-.li{
-    float: left;
-    display: block;
-    font-weight: bold;
-    float: left;
-    padding: 1vw;
+    margin-left: 3rem;
 }
 
 ul{
-    margin-left: 35vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.li{
+    display: block;
+    font-weight: bold;
+    padding: 3rem;
 }
 
 a{
@@ -72,25 +89,10 @@ a:hover,a:visited,a:focus{
     color: black;
 }
 
-.button{
-    background-color: #4285F4;
-    width: 8vw;
-    height: 5vh;
-    border-radius: 10px;
-    outline: none;
-    border: 0;
-    color: #FCFDFE;
-    margin-left: 18vw;
-    z-index: 3;
-    font-weight: bold;
-    letter-spacing: 5px;
-}
-
-
 .pink_rectangle{
     background-color: #EC5863;
     height: 100%;
-    width: 25vw;
+    width: 25%;
     position: absolute;
     right: 0;
     z-index: 1;
@@ -194,7 +196,7 @@ a:hover,a:visited,a:focus{
     margin-left: 50vw;
     z-index: 3;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 0.25rem;
     top: -20vh;
 }
 
@@ -214,6 +216,8 @@ a:hover,a:visited,a:focus{
     box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: row;
 }
 
 .top_thirdPage::before{
@@ -260,8 +264,7 @@ a:hover,a:visited,a:focus{
     letter-spacing: 6px;
 }
 
-.users, .countries, .medical_experts{
-    float: left;
+.users, .countries, .medical_experts{   /*float: left usunięte, dodane display:flex i flex-direction do .frame_thirdPage */
     align-items: center;
     height: 100%;
     justify-content: center;
@@ -310,7 +313,7 @@ a:hover,a:visited,a:focus{
     margin-left: 3vw;
     margin-top: 2vw;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 0.25rem;
 }
 
 .video{
@@ -319,7 +322,7 @@ a:hover,a:visited,a:focus{
     width: 50vw;
     bottom: 30vh;
 }
-/*TRZECIA STRONA*/
+/*CZWARTA STRONA*/
 .top_fourthPage{
     height: 30vh;
     display: flex;
